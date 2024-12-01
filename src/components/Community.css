@@ -1,0 +1,22 @@
+.community-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+}
+
+.community-card:hover {
+  transform: translateY(-5px);
+}
+
+.community-card img {
+  border-radius: 50%;
+  border: 2px solid #ffab8b;
+}
+
+.community-card p {
+  line-height: 1.6;
+}
+
+section {
+  font-family: 'Arial', sans-serif;
+}

@@ -1,76 +1,49 @@
 import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
-import MenuItem from './MenuItem';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { menuData } from '../../../data/menu';
+import MenuColumn from './MenuColumn';
 
-export default function Menu() {
-  const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true });
+function Menu() {
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
 
   return (
-    <section ref={sectionRef} className="py-20 px-8 text-left">
-      {/* OUR MENU Title */}
-      <div className="relative">
-        <h2
-          className="text-charcoal font-bold"
-          style={{
-            fontFamily: 'DIN Condensed, sans-serif',
-            fontSize: '2.875rem', // 62px
-            lineHeight: '3.25rem', // 52px
-            color: '#333333',
-          }}
-        >
-          OUR MENU
-        </h2>
-        <div
-          className="mx-auto mt-2"
-          style={{
-            width: '14.75rem', // 236px
-            height: '0.375rem', // 6px
-            backgroundColor: '#FFDAC9',
-          }}
-        />
-      </div>
+    <section ref={containerRef} id="menu" className="py-20 px-4 md:px-8">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-12">OUR MENU</h2>
+        <div className="bg-[#FFD4C8] px-6 py-2 rounded-sm cursor-pointer mx-auto w-fit mb-12">
+          <span className="text-sm font-medium">KNOW MORE</span>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+          {/* Vertical lines */}
+          <div className="hidden lg:block absolute left-1/4 top-0 bottom-0 w-px bg-gray-200"></div>
+          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gray-200"></div>
+          <div className="hidden lg:block absolute left-3/4 top-0 bottom-0 w-px bg-gray-200"></div>
 
-      {/* Menu Items Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mt-12 relative">
-        {Object.entries(menuData).map(([category, items], index) => (
-          <motion.div
-            key={category}
-            initial={{ opacity: 0, y: index % 2 === 0 ? 50 : -50 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 1 }}
-            className="relative"
-          >
-            {/* Vertical Line */}
-            {index > 0 && (
-              <div
-                className="absolute top-0 -left-4 h-full"
-                style={{
-                  width: '1px',
-                  height: '100%',
-                  backgroundColor: '#CECECE',
-                }}
-              />
-            )}
-
-            <h3
-              className="uppercase"
+          {Object.entries(menuData).map(([category, items], index) => (
+            <motion.div
+              key={category}
               style={{
-                fontFamily: 'DIN Condensed, sans-serif bold',
-                fontSize: '2.875rem', // 62px
-                color: '#333333',
+                y: useTransform(
+                  scrollYProgress,
+                  [0, 1],
+                  [0, index % 2 === 0 ? -100 : 100]
+                )
               }}
+              className="space-y-8"
             >
-              {category}
-            </h3>
-
-            {items.map((item, idx) => (
-              <MenuItem key={idx} {...item} />
-            ))}
-          </motion.div>
-        ))}
+              <h3 className="text-2xl font-bold mb-6">{category}</h3>
+              <MenuColumn items={items} />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
 }
+
+export default Menu;

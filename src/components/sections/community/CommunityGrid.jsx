@@ -3,7 +3,9 @@ import CommunityPost from './CommunityPost';
 
 function CommunityGrid({ posts }) {
   return (
-    <div className="space-y-12"> {/* Adds vertical space between rows */}
+    <div className="space-y-12">
+      {' '}
+      {/* Adds vertical space between rows */}
       {posts.map((post, index) => (
         <div
           key={index}

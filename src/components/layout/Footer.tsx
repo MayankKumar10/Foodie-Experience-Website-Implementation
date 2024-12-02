@@ -36,7 +36,10 @@ export default function Footer() {
 
         {/* Footer Bottom Text */}
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
-          <p>2017. Company. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <p>
+            2017. Company. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor.
+          </p>
         </div>
       </div>
     </footer>

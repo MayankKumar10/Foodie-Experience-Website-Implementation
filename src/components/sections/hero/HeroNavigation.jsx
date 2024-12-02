@@ -6,7 +6,7 @@ function HeroNavigation() {
     { label: 'COMMUNITY', href: '#community' },
     { label: 'LOCATION', href: '#location' },
     { label: 'OUR MENU', href: '#menu' },
-    { label: 'RECIPES', href: '#recipes' }
+    { label: 'RECIPES', href: '#recipes' },
   ];
 
   return (
@@ -24,10 +24,16 @@ function HeroNavigation() {
         ))}
       </div>
       <div className="flex space-x-8">
-        <a href="#contact" className="text-sm font-medium hover:text-gray-600 transition-colors">
+        <a
+          href="#contact"
+          className="text-sm font-medium hover:text-gray-600 transition-colors"
+        >
           CONTACT
         </a>
-        <a href="#login" className="text-sm font-medium hover:text-gray-600 transition-colors">
+        <a
+          href="#login"
+          className="text-sm font-medium hover:text-gray-600 transition-colors"
+        >
           LOGIN
         </a>
       </div>

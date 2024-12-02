@@ -5,22 +5,22 @@ export default function Contact() {
     <section className="bg-peach-100 py-20 bg-[#FFE8E0]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12">COLLABORATE WITH US</h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
           >
             <p className="text-lg mb-6">
-              Let us get in touch at your convenience! Join our
-              vibrant food community where creativity meets taste.
+              Let us get in touch at your convenience! Join our vibrant food
+              community where creativity meets taste.
             </p>
             <p className="text-lg">
-              We work with people who share our love of good food and
-              believe in bringing joy through the art of cooking.
+              We work with people who share our love of good food and believe in
+              bringing joy through the art of cooking.
             </p>
           </motion.div>
-          
+
           <motion.form
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}

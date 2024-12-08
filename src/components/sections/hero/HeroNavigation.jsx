@@ -11,7 +11,7 @@ function HeroNavigation() {
 
   return (
     <nav className="flex justify-between items-center">
-      <div className="flex space-x-12">
+      <div className="flex justify-start space-x-12 text-lg">
         {navItems.map((item) => (
           <a
             key={item.label}

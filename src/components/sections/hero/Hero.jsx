@@ -2,7 +2,6 @@ import React from 'react';
 import HeroContent from './HeroContent';
 import HeroImage from './HeroImage';
 import HeroLogo from './HeroLogo';
-import HeroNavigation from './HeroNavigation';
 import HeroSidebar from './HeroSidebar';
 
 function Hero() {

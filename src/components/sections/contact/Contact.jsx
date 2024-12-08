@@ -6,11 +6,13 @@ export default function Contact() {
     <section className="bg-[#FFDAC9] py-20">
       <div className=" container mx-auto px-4">
         {/* Section Title */}
-        <div className=" text-start text-4xl font-bold mb-6 relative inline-block">
+        <div className=" text-start text-2xl font-bold mb-6 relative inline-block"
+        style={{ color: "#333"}}
+        >
           COLLABORATE
           <span className="block relative">
-          <div className="top-1/2 border-t-4 mt-4 inset-x-0 bg-[#FFF]" style={{ height: "0.3rem", width: "11rem"}}></div>
-            <span className="absolute inline-block z-100 px-2 -mt-6">WITH US</span>
+          <div className="top-1/2 border-t-4 -ml-2 mt-4 inset-x-0 bg-[#FFF]" style={{ height: "0.3rem", width: "11rem"}}></div>
+            <span className="absolute text-4xl inline-block z-100 px-2 -ml-2 -mt-6">WITH US</span>
 
           </span>
         </div>
@@ -21,6 +23,7 @@ export default function Contact() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
+            style={{ color: "#767676" , fontFamily: "Gill Sans, Regular", width: "25rem"}}
           >
             <p className="text-lg mb-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

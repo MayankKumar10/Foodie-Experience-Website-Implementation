@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function HeroSidebar() {
   const [activeSection, setActiveSection] = useState(1);
-  const totalSections = 6; // Total number of sections in the page
+  const totalSections = 5; // Total number of sections in the page
 
   useEffect(() => {
     const handleScroll = () => {

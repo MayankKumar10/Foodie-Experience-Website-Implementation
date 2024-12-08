@@ -20,7 +20,7 @@ function Recipes() {
     <section id="recipes" className="py-20 px-4 md:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 space-y-4 md:space-y-0">
-          <div>
+          <div style={{ color: "#333"}}>
             <h2 className="text-2xl font-bold">POPULAR</h2>
             <div className="inline-block bg-[#FFE8E0]  z-100 px-2" style={{ height: "0.3rem", width: "12rem", marginLeft: "-1rem"}}></div>
             <h2 className="absolute text-4xl font-bold -mt-6"> RECIPES</h2>
@@ -30,7 +30,7 @@ function Recipes() {
             </div>
           </div>
           <div className="flex flex-col md:flex-col items-end md:items-end space-y-2 md:space-y-0 md:space-x-4">
-            <span className="text-lg">DO YOU WANT TO SHARE YOUR OWN RECIPE?</span>
+            <div className="text-lg font-bold leading-6 tracking-wide" >DO YOU WANT TO SHARE YOUR OWN RECIPE?</div>
             <div className="flex flex-col bg-[#FFD4C8] px-6 py-2 rounded-sm cursor-pointer">
               <div className="text-sm font-medium">SEND IT NOW</div>
             </div>

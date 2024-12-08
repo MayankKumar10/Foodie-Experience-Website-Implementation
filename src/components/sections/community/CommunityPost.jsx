@@ -18,8 +18,8 @@ function CommunityPost({id, username, content, image, likes, comments }) {
       className="absolute flex rounded-lg justify-between shadow-lg p-2"
       style={{ width: '32rem', background: 'transparent', marginTop: "-5rem" }} // Make the background transparent
     >
-      <div className="flex flex-col justify-between" style={{ background: 'white', width: "48%"  }}>
-        <div className='m-2'>
+      <div className="flex flex-col font-bold justify-between" style={{ background: 'white', width: "48%"  }}>
+        <div className='m-2' style={{ fontFamily: "Gill Sans, Regular", fontSize: "16px",  }}>
           <h3 className="font-bold text-md mb-2">{username}</h3>
           <p className="text-sm text-gray-600">{content}</p>
         </div>

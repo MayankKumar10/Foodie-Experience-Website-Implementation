@@ -12,7 +12,7 @@ export default function Footer() {
           {Array.from({ length: 5 }, (_, index) => (
             <div key={index}>
               <h3 className="font-bold mb-4" style={{ color: "#FFDAC9"}}>SECTION {index + 1}</h3>
-              <ul className="space-y-2" style={{ color: "#767676"}} >
+              <ul className="space-y-2" style={{ color: "#767676" , fontFamily: "Gill Sans, Regular"}} >
                 <li>Subsection</li>
                 <li>Subsection</li>
                 <li>Subsection</li>
@@ -22,7 +22,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-8 pt-8  text-center" style={{ color: "#767676"}}>
+        <div className="mt-8 pt-8  text-center" style={{ color: "#767676" , fontFamily: "Gill Sans, Regular" }}>
           <p>
             2017. Company. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit, sed do eiusmod tempor.

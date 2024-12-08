@@ -78,7 +78,8 @@ function Community() {
                 </div>
               )}
               {index === 2 && (
-                <div className="text-gray-60 text-sm transform -translate-y-1/2" style={{ width: "15rem", marginRight: "55rem", marginTop: "5rem", }}>
+                <div className="text-gray-60 text-sm transform -translate-y-1/2" style={{ width: "15rem", marginRight: "55rem", marginTop: "5rem", fontFamily: "Gill Sans, Regular", fontSize: "16px",}}
+                >
                   <p className="bold bg:[#333] top-0 left-0 mt-20 mr-5 w-48 text-gray-600 text-lg" style={{width: "15rem"}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     do eiusmod tempor incididunt ut labore et dolore magna

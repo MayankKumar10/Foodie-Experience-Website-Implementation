@@ -9,6 +9,7 @@ function CommunityHeader() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
+      style={{ marginLeft: "15rem", color: "#333" }}
     >
       <h2 className="text-4xl font-bold ">MEET OUR</h2>
 

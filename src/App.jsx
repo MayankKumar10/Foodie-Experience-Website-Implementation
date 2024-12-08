@@ -19,7 +19,7 @@ function App() {
       <Header />
       <Hero />
       <Community />
-      <Location />
+      {/* <Location /> */}
       <Menu />
       <Recipes />
       <Contact />

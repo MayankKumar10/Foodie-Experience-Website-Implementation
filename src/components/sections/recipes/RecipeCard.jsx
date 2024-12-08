@@ -58,10 +58,10 @@ function RecipeCard({ image, title, description, servings, isLargeCard }) {
         {/* Card Content */}
         <div className="p-4 md:p-6">
           <div className="mb-4">
-            <span className="text-sm text-gray-500">DIFFICULTY</span>
+            <span className="text-sm text-gray-500" style={{ color: "#767676" , opacity: "0.56"}}>DIFFICULTY</span>
             <h3 className="text-lg md:text-xl font-bold mt-1">{title}</h3>
           </div>
-          <p className="text-gray-600 text-sm md:text-base mb-4">{description}</p>
+          <p className="text-gray-600 text-sm md:text-base mb-4" style={{ color: "#767676", fontFamily: "Gill Sans, Regular" }}>{description}</p>
 
         </div>
       </motion.div>

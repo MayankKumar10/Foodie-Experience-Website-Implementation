@@ -1,0 +1,9 @@
+export { default as chef_stamp } from './chef-stamp.svg';
+export { default as instagram_btn } from './instagram-btn.svg';
+export { default as facebook_icon } from './facebook-icon.svg';
+export { default as instagram_icon } from './instagram-icon.svg';
+export { default as twitter_icon } from './twitter-icon.svg';
+export { default as Linkedin_icon } from './Linkedin-icon.svg';
+export { default as next } from './next.svg';
+export { default as go_btn } from './go-btn.svg';
+export { default as back } from './back.svg';

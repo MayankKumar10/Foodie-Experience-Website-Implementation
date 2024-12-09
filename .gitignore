@@ -1,4 +1,11 @@
-# Logs
+# Ignore node modules
+node_modules/
+
+# Ignore local dev environments
+dist-ssr
+*.local
+
+# Log files
 logs
 *.log
 npm-debug.log*
@@ -7,12 +14,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-# dist
-dist-ssr
-*.local
-
-# Editor directories and files
+# IDE and editor files
 .vscode/*
 !.vscode/extensions.json
 .idea

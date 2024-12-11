@@ -57,10 +57,10 @@ function Navigation() {
               <a
                 key={item.label}
                 href={item.href}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-sm font-bold font-medium transition-colors ${
                   activeSection === item.section
                     ? 'text-black'
-                    : 'text-gray-600 hover:text-black'
+                    : 'text-gray-700 hover:text-black'
                 }`}
               >
                 {item.label}
